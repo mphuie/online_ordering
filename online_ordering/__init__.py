@@ -1,8 +1,8 @@
 from flask import Flask
 app = Flask(__name__)
 
-from myapp.views import aview
-from myapp.database import db_session
+from online_ordering.views import aview
+from online_ordering.database import db_session
 
 @app.teardown_request
 def shutdown_session(exception=None):
